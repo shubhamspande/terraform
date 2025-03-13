@@ -110,15 +110,3 @@ resource "aws_instance" "web_instance" {
               EOF
 }
 
-# Output the VPC ID and EC2 Instance ID
-output "vpc_id" {
-  value = aws_vpc.main.id
-}
-
-output "web_instance_id" {
-  value = aws_instance.web_instance.id
-}
-
-output "web_instance_private_ip" {
-  value = aws_instance.web_instance.private_ip
-}
