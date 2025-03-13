@@ -95,7 +95,7 @@ resource "aws_instance" "web_instance" {
   subnet_id     = aws_subnet.web.id
   private_ip    = "10.0.2.10"  # Specific private IP for the Web instance
   tags = {
-    Name = "Web EC2 Instance"
+    Name = "Web_Instance"
   }
 
   metadata_options {
