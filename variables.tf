@@ -31,3 +31,4 @@ variable "region" {
 variable "ami_id" {
   description = "Amazon Linux 2023 AMI ID"
   default     = "ami-0d0f28110d16ee7d6"  
+}
