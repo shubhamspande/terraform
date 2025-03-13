@@ -52,7 +52,8 @@ resource "aws_internet_gateway" "gw" {
 
 # NAT Gateway (for Private Subnets)
 resource "aws_eip" "nat" {
-  vpc = true
+  domain = "vpc"  # Use 'domain' instead of 'vpc'
+  instance = aws_instance.example.id
 }
 
 resource "aws_nat_gateway" "nat" {
